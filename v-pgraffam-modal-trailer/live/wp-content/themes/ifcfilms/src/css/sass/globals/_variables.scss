@@ -1,0 +1,42 @@
+
+// colors
+$colorWhite: #fff;
+$colorBlack: #000;
+$colorGrayDark: #464646;
+$colorGrayLight: #ebebeb;
+$colorWhiteBG: #fafafa;
+$colorBlueLight: #00ccff;
+
+// trailer colors
+$colors: #ffab33, #00ccff, #7ad000;
+$colorLight: #ffff80, #4ce2ff, #b2e54c;
+
+// midnight
+$colorMidnight: #d6124a;
+$colorMidnightLight: #e96391;
+$colorMidnightBG: #262626;
+
+// trailer num
+$trailerNum: 4;
+
+$rgbaBlack1: rgba(0,0,0,1);
+$rgbaBlack9: rgba(0,0,0,0.9);
+$rgbaBlack8: rgba(0,0,0,0.8);
+$rgbaBlack5: rgba(0,0,0,0.5);
+$rgbaBlack3: rgba(0,0,0,0.33);
+$rgbaBlack0: rgba(0,0,0,0);
+
+$rgbaWhite1: rgba(255,255,255,1);
+$rgbaWhite9: rgba(255,255,255,0.9);
+$rgbaWhite8: rgba(255,255,255,0.8);
+$rgbaWhite5: rgba(255,255,255,0.5);
+$rgbaWhite3: rgba(255,255,255,0.33);
+$rgbaWhite0: rgba(255,255,255,0);
+
+$easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+$timing: 0.25s;
+
+//easier to set font familys
+$helvRegular: HelveticaNeueLTStd-Lt, "Helvetic Neue", Helvetica, Arial, sans-serif;
+$helvBold: HelveticaNeueLTStd-Bd,"Helvetic Neue", Helvetica, Arial, sans-serif;
+$helvLight: HelveticaNeueLTStd-UltLt,"Helvetic Neue", Helvetica, Arial, sans-serif;;

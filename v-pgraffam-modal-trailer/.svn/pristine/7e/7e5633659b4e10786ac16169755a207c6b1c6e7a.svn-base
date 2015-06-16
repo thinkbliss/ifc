@@ -1,0 +1,136 @@
+footer {
+  text-transform: uppercase;
+  position: static;
+
+  a {
+    font-size: 0.75em;
+    @media all and (min-width: 641px) {
+      &:hover, &:focus {
+        opacity: 0.66;
+      }
+    }
+    @include footer-breaks {
+      font-size: 0.625em;
+    }
+  }
+  
+  &.single-row {
+    padding-bottom: 2em;
+    padding-top: 1em;
+  }
+
+  .footer-desktop-right {
+    float: right;
+    ul {
+      margin-bottom: 0;
+      line-height: 1;
+    }
+    li {
+      display: inline-block;
+      float: none;
+    }
+  }
+  .facebook, .twitter, .instagram {
+    a {
+      height: 28px;
+      background: no-repeat center bottom/contain; 
+      display: inline-block;
+      text-indent:10000px;
+      vertical-align: bottom;
+      @media all and (max-width: 1032px) {
+        height: 20px;
+      }
+    }
+  }
+  .facebook a {
+    background-image: url(../images/svgs/icon-fb-black.svg);
+    width: 12px;
+  }
+  .twitter a {
+    background-image: url(../images/svgs/icon-tw-black.svg);
+    width: 28px;
+    @media all and (max-width: 1032px) {
+      width: 20px;
+    }
+  }
+  .instagram a {
+    background-image: url(../images/svgs/icon-insta-black.svg);
+    width: 24px;
+    @media all and (max-width: 1032px) {
+      width: 20px;
+    }
+  }
+}
+.footer-links {
+  @include footer-breaks {
+    max-width: 300px;
+    float: right;
+  }
+  li {
+    margin-left: 1rem;
+  }
+  a {
+    opacity: 0.8;
+    font-size: 0.625rem;
+    @include footer-breaks {
+      font-size: 0.5625rem;
+    }
+  }
+}
+.footer-logos {
+  background: none;
+  display: table;
+  &.hide-for-medium-up {
+    display: table !important;
+    line-height: 1.9;
+  }
+  @media all and (min-width:641px) {
+    position: absolute;
+    bottom: 2rem;
+    max-width: 560px;
+  }
+  >a, span {
+    display: table-cell;
+  }
+  svg {
+    vertical-align: middle;
+  }
+  path, polygon, rect {
+    fill: #fff;
+  }
+  [class^="logo"] {
+    padding: 0 1.2%;
+    vertical-align: middle;
+    border-bottom: 3px solid #000;
+    @media all and (min-width: 641px) {
+      &:hover, &:focus {
+        opacity: 1;
+        svg {
+          opacity: 0.66;
+        }
+      }
+    }
+  }
+  .logo-amcnet { width: 22%; padding-left: 0; margin-right: 0.4%; border-bottom: none; vertical-align: bottom; }
+  .logo-line { width: 77.2%; padding: 0; margin-left: 0.4%; line-height: 0; }
+  .logo-amc { width: 9.9%; padding-left: 1.9%; }
+  .logo-bbc { width: 8.9%; }
+  .logo-ifc { width: 7.3%; }
+  .logo-sundance { width: 14.2%; padding-left: 1.1%; }
+  .logo-we { width: 6.3%; padding-left: 0.9%; }
+  .logo-ifcf { width: 15%; }
+  .logo-amcnetintl { width: 16%; padding-right: 0; padding-left: 0.7%; }
+}
+
+[class^="footer-social"] {
+  height: 28px;
+  max-width: 28px;
+  @include footer-breaks {
+    height: 20px;
+    max-width: 20px;
+  }
+  svg {
+    max-height: 100%;
+    max-width: 100%;    
+  }
+}

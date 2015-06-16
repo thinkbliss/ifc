@@ -1,0 +1,155 @@
+#bc-title, #brightcove_video_search .row{
+	width: 100%;
+	margin-bottom: 10px;
+}
+#brightcove_video_search .row, #bc-results .bc-video{
+	position: relative;
+	overflow: hidden;
+}
+#bc-search, #bc-reset{
+	width: 45%;
+	display: block !important;
+}
+#bc-reset{
+	float: right;
+}
+#bc-search, #bc-results .detail{
+	float: left;
+	margin: 0 10px;
+}
+#bc-results .bc-video{
+	margin: 10px auto;
+}
+#bc-search, #bc-error{
+	font-weight: bold;
+}
+#bc-error{
+	color: #D10000;
+}
+#bc-results, #bc-reset, #bc-error{
+	display: none;
+}
+#brightcove_video_search.error #bc-error,
+#brightcove_video_search.active #bc-results
+#brightcove_video_search.active #bc-reset{
+	display: block;
+}
+#bc-results .detail .label{
+	font-weight: bold;
+}
+#bc-results .detail.thumb{
+	width: 120px;
+}
+#bc-results .detail.title{
+	min-width: 320px;
+	max-width: 100%;
+}
+#bc-results .detail.date{
+	width: 60px;
+}
+#bc-results .detail.trailer-button, #bc-results .detail.gallery-button{
+	width: 110px;
+	max-width: 50%;
+}
+#bc-results button{
+	width: 100%;
+}
+#bc-results .divider{
+	display: none;
+}
+
+@media screen and (max-width: 1550px) {
+	#bc-results .divider{
+		display: block;
+		clear: both;
+	}
+	#bc-results .bc-video{
+		border-top: solid 1px #333;
+		padding-top: 5px;
+		margin-top: 5px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	#bc-results .detail{
+		display: block;
+		clear: both;
+		float: none;
+		margin: 2px auto;
+		text-align: center;
+		width: 100% !important;
+	}
+}
+
+.bg-flash-green{
+  animation: backgroundFlashGreen ease-in-out 0.75s;
+  animation-iteration-count: 1;
+  -webkit-animation: backgroundFlashGreen ease-in-out 0.75s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation: backgroundFlashGreen ease-in-out 0.75s;
+  -moz-animation-iteration-count: 1;
+  -o-animation: backgroundFlashGreen ease-in-out 0.75s;
+  -o-animation-iteration-count: 1;
+  -ms-animation: backgroundFlashGreen ease-in-out 0.75s;
+  -ms-animation-iteration-count: 1;
+}
+
+@keyframes backgroundFlashGreen{
+  0% {
+    background-color: inherit;
+  }
+  50% {
+    background-color: #00dd15;
+  }
+  100% {
+    background-color: inherit;
+  }
+}
+
+@-moz-keyframes backgroundFlashGreen{
+  0% {
+    background-color: inherit;
+  }
+  50% {
+    background-color: #00dd15;
+  }
+  100% {
+    background-color: inherit;
+  }
+}
+
+@-webkit-keyframes backgroundFlashGreen {
+  0% {
+    background-color: inherit;
+  }
+  50% {
+    background-color: #00dd15;
+  }
+  100% {
+    background-color: inherit;
+  }
+}
+
+@-o-keyframes backgroundFlashGreen {
+  0% {
+    background-color: inherit;
+  }
+  50% {
+    background-color: #00dd15;
+  }
+  100% {
+    background-color: inherit;
+  }
+}
+
+@-ms-keyframes backgroundFlashGreen {
+  0% {
+    background-color: inherit;
+  }
+  50% {
+    background-color: #00dd15;
+  }
+  100% {
+    background-color: inherit;
+  }
+}

@@ -1,0 +1,26 @@
+/* styles specific to accordion on single page */
+
+// bk todo: stretch to tablet
+@media all and (max-width: 640px) {
+  .touch {
+    .collapsible {
+      > a:before {
+        transition: transform $timing $easing;
+        transform-origin: 25% 50%;
+        @include css-triangle(0.76rem, $colorBlack, left);
+        float: left;
+        margin-top: 0.35rem;
+      }
+      &.active > a:before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+.no-touch {
+  .collapsible {
+    > a {
+      cursor: default;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "IFC-Films",
+  "version": "1.0",
+  "author": "Big Spaceship",
+  "devDependencies": {
+    "jquery": "~1.11.1",
+    "modernizr": "~2.8.3",
+    "nprogress": "~0.1.6",
+    "velocity": "~1.2.2",
+    "fastclick": "~1.0.6",
+    "foundation": "~5.5.1",
+    "rangeslider.js": "~1.2.0",
+    "videojs": "~4.12.5",
+    "FlexSlider": "https://github.com/woothemes/FlexSlider.git"
+  }
+}

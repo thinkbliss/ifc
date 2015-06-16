@@ -1,0 +1,34 @@
+/*
+	FB and Tw page share buttons
+	customize per page in sections sass files
+*/
+.share-fixed {
+  position: fixed;
+  z-index: 3;
+  text-align: center;
+  z-index: 1000;
+
+  [class$="-share"] {
+    display: block;
+    border: 1px solid;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.625rem;
+    margin-bottom: 0.7rem;
+
+  }
+
+  svg {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  // this module is not visible on mobile
+  @media all and (min-width: 641px) {
+    display: block !important;
+  }
+}
+.share-fixed-header {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}

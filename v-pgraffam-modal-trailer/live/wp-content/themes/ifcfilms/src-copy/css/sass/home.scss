@@ -1,0 +1,30 @@
+// bower:scss
+// endbower
+
+// normalize
+//@import "vendor/normalize";
+
+// globals
+@import 'globals/variables';
+@import 'globals/mixins';
+@import 'globals/helpers';
+@import 'globals/universal';
+@import 'globals/typography';
+
+// vendor
+@import 'vendor/overrides';
+@import 'vendor/nprogress';
+
+// components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/homepage-video';
+@import 'components/trailer-info';
+@import 'components/trailers-scroll';
+
+// shared
+@import 'shared/buttons';
+@import 'shared/search';
+
+// sections
+@import 'sections/homepage';

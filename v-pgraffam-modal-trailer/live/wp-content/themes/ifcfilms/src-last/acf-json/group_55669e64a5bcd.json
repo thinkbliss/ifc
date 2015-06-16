@@ -1,0 +1,62 @@
+{
+    "key": "group_55669e64a5bcd",
+    "title": "Featured Discover Groups",
+    "fields": [
+        {
+            "key": "field_55669e70bd7ae",
+            "label": "Featured Discover Groups List",
+            "name": "featured_discover_groups_list",
+            "prefix": "",
+            "type": "relationship",
+            "instructions": "Organize list of featured discover groups. Will be shown in order listed.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "discover"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": 1,
+            "max": "",
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template_featured_discover.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "modified": 1432838970
+}

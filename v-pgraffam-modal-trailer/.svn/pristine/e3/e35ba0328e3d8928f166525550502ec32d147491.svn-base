@@ -1,0 +1,23 @@
+blockquote {
+  background-color: $colorGrayLight;
+  margin-bottom: 0;
+  padding-bottom: 0.8em;
+  text-align: center;
+
+  h3 {
+
+    &:before, &:after {
+      content: '"';
+      font-family: HelveticaNeueLTStd-Lt, "Helvetic Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+
+  a {
+    color: $colorBlack;
+    text-decoration: underline;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

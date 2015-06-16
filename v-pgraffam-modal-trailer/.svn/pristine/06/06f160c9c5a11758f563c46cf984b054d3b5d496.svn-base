@@ -1,0 +1,111 @@
+.single-page {
+  background-color: $colorWhiteBG;
+  margin-left: 0.9em;
+
+  a {
+    color: $colorBlack;
+    text-decoration: underline;
+
+    &:not(&[role="tab"],.clearing-close) {
+      color: $colorBlack;
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  footer {
+
+    ul li a {
+      color: $colorBlack;
+      text-decoration: none;
+    }
+
+    svg * {
+      fill: $colorBlack;
+    }
+
+    @media all and (max-width: 970px) {
+      .columns {
+        width: 100%;
+      }
+      .footer-links {
+        max-width: 100%;
+      }
+      .footer-logos {
+        position: relative;
+        bottom: auto;
+      }
+      .footer-desktop-right {
+        margin-bottom: 1rem;
+      }
+    }
+    @media all and (max-width: 695px) {
+      .footer-desktop-right li {
+        margin-left: 0.4rem;
+      }
+    }
+  }
+
+  // styles only for share module on single page
+  .share-fixed {
+    width: 6.5%;
+    top: 212px;
+    [class$="-share"] {
+      margin-left: auto;
+      margin-right: auto;
+      color: inherit !important; //to grab text-color for border color
+    }
+  }
+
+  // styles only for search module on single page
+  .search-open input.search-input {
+    @media all and (max-width: 640px) {
+      width: calc(100vw - 5.35rem);
+    }
+  }
+}
+
+@media all and (min-width: 641px) {
+  .single-page {
+    //margin-left: 7.1875em;
+    margin-left: 7em;
+  }
+}
+
+.single-row {
+  padding: 2em 0 1.2em;
+  width: 85%;
+}
+
+.first-row {
+  padding-top: 275px;
+}
+@media all and (min-width: 641px) {
+  .first-row {
+    padding-top: 449px;
+  }
+
+  .starring {
+    h4 {
+      float: left;
+    }
+  }
+}
+
+.drawer-open {
+  .handle, .single-page {
+    margin-left: 10vw;
+  }
+}
+
+@media all and (min-width: 641px) {
+  .generic {
+    > article {
+      padding-top: 4em;
+    }
+  }
+}

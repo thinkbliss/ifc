@@ -1,0 +1,67 @@
+{
+  "name": "IFC-Films",
+  "description": "IFC Films Wordpress Theme",
+  "license": "MIT",
+  "version": "1.0.0",
+  "repository": {
+    "type": "svn",
+    "url": ""
+  },
+  "author": "Big Spaceship",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "browserify-shim": "^3.8.5",
+    "del": "^0.1.2",
+    "event-stream": "^3.3.0",
+    "glob": "^5.0.5",
+    "gulp": "^3.6.0",
+    "gulp-autoprefixer": "^0.0.7",
+    "gulp-concat": "^2.3.4",
+    "gulp-csso": "^0.2.9",
+    "gulp-env": "^0.2.0",
+    "gulp-jshint": "^1.8.4",
+    "gulp-livereload": "^1.2.0",
+    "gulp-load-plugins": "^0.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-template": "^1.0.0",
+    "gulp-uglify": "^1.0.0",
+    "jshint-stylish": "^0.4.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "browser": {
+    "jquery": "./src/bower_components/jquery/dist/jquery.min.js",
+    "modernizr": "./src/bower_components/modernizr/modernizr.js",
+    "nprogress": "./src/bower_components/nprogress/nprogress.js",
+    "velocity": "./src/bower_components/velocity/velocity.min.js",
+    "velocity-ui": "./src/bower_components/velocity/velocity.ui.min.js",
+    "videojs": "./src/bower_components/videojs/dist/video-js/video.js",
+    "foundation": "./src/bower_components/foundation/js/foundation.js",
+    "fastclick": "./src/bower_components/fastclick/lib/fastclick.js",
+    "rangeslider": "./src/bower_components/rangeslider.js/dist/rangeslider.js",
+    "flexslider": "./src/bower_components/FlexSlider/jquery.flexslider-min.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "modernizr": "Modernizr",
+    "nprogress": "NProgress",
+    "velocity": "velocity",
+    "velocity-ui": "Velocity",
+    "videojs": "videojs",
+    "foundation": "foundation",
+    "fastclick": "fastclick",
+    "rangeslider": "rangeslider",
+    "flexslider": "flexslider"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}

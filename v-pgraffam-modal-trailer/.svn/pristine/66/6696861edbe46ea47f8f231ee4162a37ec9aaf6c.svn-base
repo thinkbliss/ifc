@@ -1,0 +1,12 @@
+.right-arrow-icon {
+  background: url('./../images/icons/right-arrow.png') no-repeat;
+}
+.left-arrow-icon {
+  background: url('./../images/icons/left-arrow.png') no-repeat;
+}
+.right-arrow-icon, .left-arrow-icon {
+  display: inline-block;
+  height: 23px;
+  text-indent: -9999px;
+  width: 12px;
+}

@@ -1,0 +1,114 @@
+body {
+  background: $colorBlack;
+  color: #000;
+  //overflow: hidden;
+
+  &.homepage {
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width: 641px) {
+  body {
+    //background: url('/images/trailer1.jpg') center center #000;
+  }
+}
+
+a {
+  color: $colorWhite;
+
+  &:hover, &:focus {
+    color: $colorWhite;
+  }
+}
+
+@for $i from 1 through length($colors) {
+  .trailer#{$i} {
+    .trailer-color {
+      &.button {
+        color: nth($colors, $i);
+        border-color: nth($colors, $i);
+
+        &:hover {
+          background-color: nth($colors, $i);
+          color: $colorBlack;
+        }
+      }
+
+      &.button-fill {
+        background-color: nth($colors, $i);
+        color: $colorBlack;
+
+        svg * {
+          fill: $colorBlack;
+        }
+      }
+
+      &.share-button {
+        border-color: $colorGrayDark;
+        color: $colorBlack;
+
+        &:hover {
+          background-color: nth($colors, $i);
+          color: $colorBlack;
+        }
+      }
+      .mute g *, .unmute g * {
+        fill: nth($colors, $i);
+      }
+    }
+
+    .text-color {
+      color: nth($colors, $i) !important;
+      text-decoration: none;
+
+      path {
+        fill: nth($colors, $i);
+      }
+    }
+
+    .top-bar.expanded {
+      .trailer-color {
+        &.top-bar-section, &.title-area {
+          background-color: nth($colors, $i);
+        }
+      }
+    }
+  }
+
+  .generic {
+    &.single-page {
+      a {
+        color: $colorBlueLight;
+      }
+
+      footer {
+        ul li a {
+          color: $colorBlack;
+        }
+      }
+    }
+
+    .top-bar {
+      background-color: $colorWhite;
+
+      ul li > a {
+        color: $colorBlack;
+
+        &:hover {
+          color: $colorBlueLight;
+        }
+      }
+    }
+
+    .trailer-color {
+      a {
+        color: $colorBlueLight;
+      }
+
+      svg * {
+        fill: $colorBlack;
+      }
+    }
+  }
+}

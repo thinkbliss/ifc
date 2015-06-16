@@ -1,0 +1,3 @@
+<?php
+
+define( 'IFC_FILMS_BC_READ_TOKEN', 'pXAhbi_RlCgCra8IMwu5YgSV3WGYvaHNMAiJGLVH4H48yn76mOWQAA..' );

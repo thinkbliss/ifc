@@ -1,0 +1,185 @@
+.move {
+  .trailers-scroll {
+    li {
+      &:hover {
+        background-color: $rgbaBlack3;
+      }
+    }
+  }
+}
+
+.trailers-scroll {
+  cursor: pointer;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  width: 2000px; // 350 * 4 + 550 + 16 * 3
+
+  li {
+    background-color: $rgbaBlack0;
+    cursor: pointer;
+    float: left;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    width: 350px;
+
+    @include transition(margin-left $timing $easing, opacity $timing $easing, background-color $timing $easing, width $timing $easing);
+
+    h1 {
+      @include transition(color 200ms $easing, font-size 200ms $easing, line-height 200ms $easing);
+    }
+
+    &:hover {
+      .learn {
+        opacity: 1;
+      }
+    }
+
+    > a {
+      bottom: 25%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      width: inherit;
+    }
+
+    .scrubber {
+      //height: 2px;
+      //background-color: $colorWhite;
+      //margin: -0.75rem 3.5rem 0;
+      position: relative;
+      width: 100%;
+      padding: 0 3.5em;
+    }
+
+    .info {
+      padding: 0rem 3.5rem 0.5rem;
+      text-align: left;
+    }
+
+    .time {
+      @extend .HelveticaNeueLTStd-Bd;
+      font-size: 0.75rem;
+      margin: 0 0.25rem;
+    }
+
+    &.first {
+      margin-left: 3em;
+
+      > a {
+        left: -120%;
+      }
+    }
+
+    &.active {
+      width: 450px;
+
+      > a {
+        bottom: 18%;
+      }
+      .release-info {
+        margin-bottom: 0.75em;
+        padding: 0 3.5rem;
+        text-align: left;
+
+        @include transition(opacity $timing $easing);
+      }
+      h1 {
+        font-size: 5em;
+        text-align: left;
+      }
+      .info, .scrubber {
+        display: block;
+      }
+      .button {
+        float: left;
+        margin: 0 -3rem 0 3.5rem;
+      }
+
+      &:hover {
+        width: 550px;
+
+        h1 {
+          font-size: 6em;
+        }
+
+        .release-info {
+          opacity: 1;
+        }
+        .hide-force {
+          display: inline-block !important;
+        }
+      }
+    }
+  }
+
+  .info {
+
+  }
+
+  .button-container {
+    margin-top: 1rem;
+
+    .button {
+      vertical-align: top;
+    }
+  }
+
+  .learn {
+    @include transition(opacity 0.2s $easing);
+  }
+
+  h1 {
+    color: $colorWhite;
+    font-size: 2.5em;
+    line-height: 0.9;
+    padding: 0 3.5rem;
+    marign-bottom: 0.3125rem;
+  }
+}
+
+@for $i from 1 through length($colors) {
+  .trailers-scroll {
+    li.color-#{$i} {
+      .button, .gwi-widget .btn-gwi {
+        border-color: nth($colors, $i);
+        color: nth($colors, $i);
+
+        &:hover {
+          background-color: nth($colors, $i);
+          color: $colorBlack;
+        }
+      }
+      .gwi-widget {
+        border-color: nth($colors, $i);
+        color: nth($colors, $i);
+
+        &:hover {
+          background-color: nth($colors, $i);
+          color: $colorBlack;
+
+          .btn-text {
+            color: $colorBlack;
+          }
+        }
+      }
+
+      &:hover {
+        h1 {
+          color: nth($colors, $i);
+        }
+      }
+    }
+  }
+
+  .trailer#{$i} {
+    .trailers-scroll {
+      .active {
+        h1 {
+          color: nth($colors, $i);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.text-larger {
+  font-size: 1.15rem !important;
+}
+.text-smaller {
+  font-size: 0.85rem !important;
+}
+.text-smallest {
+  font-size: 0.75rem !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.color-white {
+  color: $colorWhite;
+}
+.color-black {
+  color: $colorBlack;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.hide-force {
+  display: none !important;
+}
+
+.border {
+  border: 1px solid $colorGrayLight;
+}
+.border-bottom {
+  border-bottom: 1px solid $colorGrayLight;
+}
+.border-top {
+  border-top: 1px solid $colorGrayLight;
+}
+.border-left {
+  border-left: 1px solid $colorGrayLight;
+}
+.border-right {
+  border-right: 1px solid $colorGrayLight;
+}
+.border-right-left {
+  border-right: 1px solid $colorGrayLight;
+  border-left: 1px solid $colorGrayLight;
+}

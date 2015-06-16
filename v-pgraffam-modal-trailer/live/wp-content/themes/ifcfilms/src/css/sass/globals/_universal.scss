@@ -1,0 +1,220 @@
+body {
+  background: $colorBlack;
+  color: #000;
+  //overflow: hidden;
+
+  &.homepage {
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width: 641px) {
+  body {
+    //background: url('/images/trailer1.jpg') center center #000;
+  }
+}
+
+a {
+  color: $colorWhite;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $colorWhite;
+  }
+}
+
+@for $i from 1 through length($colors) {
+  .trailer#{$i} {
+    .trailer-color {
+      &.button {
+        color: nth($colors, $i);
+        border-color: nth($colors, $i);
+
+        &:hover {
+          background-color: nth($colors, $i);
+          color: $colorBlack;
+        }
+      }
+
+      &.button-fill {
+        background-color: nth($colors, $i);
+        color: $colorBlack;
+
+        svg * {
+          fill: $colorBlack;
+        }
+      }
+
+      &.share-button {
+        border-color: $colorGrayDark;
+        color: $colorBlack;
+
+        &:hover {
+          background-color: nth($colors, $i);
+          color: $colorBlack;
+        }
+      }
+//      .mute g *, .unmute g * {
+//        fill: nth($colors, $i);
+//      }
+    }
+
+    .text-color {
+      color: nth($colors, $i) !important;
+      text-decoration: none;
+
+      path {
+        fill: nth($colors, $i);
+      }
+    }
+
+    .top-bar.expanded {
+      .trailer-color {
+        &.top-bar-section, &.title-area {
+          background-color: nth($colors, $i);
+        }
+      }
+    }
+  }
+
+  .generic {
+    .top-bar {
+      background-color: $colorWhite;
+
+      ul li > a {
+        color: $colorBlack;
+
+        &:hover {
+          color: $colorBlueLight;
+        }
+      }
+    }
+
+    .trailer-color {
+      a {
+        color: $colorBlueLight;
+      }
+
+      svg * {
+        fill: $colorBlack;
+      }
+    }
+
+    .text-color {
+      color: $colorBlack !important;
+    }
+
+    &.single-page {
+      a {
+        color: $colorBlueLight;
+      }
+
+      footer {
+        ul li a {
+          color: $colorBlack;
+        }
+      }
+    }
+  }
+
+  .midnight {
+    &.single-film .top-bar {
+      background-color: transparent;
+    }
+
+    .top-bar {
+      background-color: $colorBlack;
+
+      ul li > a {
+        color: $colorWhite;
+
+        &:hover {
+          color: $rgbaWhite5;
+        }
+      }
+      svg * {
+        fill: $colorWhite;
+      }
+    }
+
+    .trailer-color {
+      a {
+        color: $colorMidnight;
+      }
+
+      svg * {
+        fill: $colorMidnight;
+      }
+
+      &.button {
+        border-color: $colorMidnight;
+        color: $colorWhite;
+
+        &:hover {
+          background-color: $colorMidnight;
+          color: $colorBlack;
+        }
+      }
+
+      &.button-fill {
+        background-color: $colorMidnight;
+        border-color: $colorMidnight;
+        color: $colorBlack;
+
+        &:hover {
+          background-color: $colorMidnightLight;
+        }
+      }
+    }
+
+    .text-color {
+      //color: $rgbaWhite5 !important;
+      color: $colorMidnight !important;
+    }
+
+    .filtering-list {
+      li {
+        &.current-cat a {
+          color: $colorMidnight;
+        }
+        a {
+          color: $rgbaWhite5;
+
+          &:hover {
+            color: $colorMidnight;
+          }
+        }
+      }
+    }
+
+    .single-page {
+      background-color: $colorMidnightBG;
+
+      a {
+        color: $colorMidnight;
+      }
+
+      p, h3, h4, li {
+        color: $rgbaWhite5;
+      }
+
+      footer {
+        ul li a {
+          color: $colorWhite;
+        }
+        svg * {
+          fill: $colorWhite;
+        }
+
+        .facebook a { background-image: url('../images/svgs/icon-fb.svg'); }
+        .twitter a { background-image: url('../images/svgs/icon-tw.svg'); }
+        .instagram a { background-image: url('../images/svgs/icon-insta.svg'); }
+      }
+      .footer-logos {
+        [class^="logo"] {
+          border-bottom-color: #fff;
+        }
+      }
+    }
+  }
+}

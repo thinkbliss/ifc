@@ -1,0 +1,30 @@
+.quote { 
+  background-color: $colorGrayLight;
+  position: relative; 
+  left: -15px; 
+} // added 06-02 to left align quote box
+blockquote {
+  display: none;
+  // background-color: $colorGrayLight; // 06-02 put this background on the parent container above.
+  margin-bottom: 0;
+  padding-bottom: 0.8em;
+  text-align: center;
+  // &.textItem { display: none; }
+
+  h3 {
+
+    &:before, &:after {
+      content: '"';
+      font-family: HelveticaNeueLTStd-Lt, "Helvetic Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+
+  a {
+    color: $colorBlack;
+    text-decoration: underline;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

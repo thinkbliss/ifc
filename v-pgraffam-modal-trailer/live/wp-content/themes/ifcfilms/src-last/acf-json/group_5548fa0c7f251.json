@@ -1,0 +1,63 @@
+{
+    "key": "group_5548fa0c7f251",
+    "title": "Home Page",
+    "fields": [
+        {
+            "key": "field_5538090c1d6c8",
+            "label": "Film Carousel",
+            "name": "film_carousel",
+            "prefix": "",
+            "type": "relationship",
+            "instructions": "Used in homepage and trailer drawer to determine featured posts. Shown in list order. Min of 3 and max of 5. Make sure the films have trailer drawer image and main brightcove trailer.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "film"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": 3,
+            "max": 5,
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template_home.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "modified": 1432847800
+}

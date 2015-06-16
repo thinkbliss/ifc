@@ -1,0 +1,10 @@
+.video-controls {
+  .play, .pause, .mute, .unmute, .share {
+    cursor: pointer;
+    padding: 0 0.2em;
+  }
+
+  .mute, .unmute {
+    vertical-align: middle;
+  }
+}

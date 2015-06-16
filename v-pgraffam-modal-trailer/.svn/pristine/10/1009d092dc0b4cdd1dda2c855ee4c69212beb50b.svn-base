@@ -1,0 +1,64 @@
+.button {
+  background: transparent;
+  border-color: #008cba;
+  border-width: 1px;
+  min-width: 10em;
+  padding: 0.5rem 1rem 0.5625rem;
+  text-transform: uppercase;
+
+  &.learn {
+    margin: 0;
+  }
+
+  &.watch {
+    padding: 0;
+
+    .btn-gwi {
+      padding: 0.4rem 1rem 0.5625rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.share-button {
+  border-color: $colorGrayDark;
+  color: $colorBlack;
+  min-width: 100%;
+  text-align: left;
+
+  &.site {
+
+  }
+  &.fb {
+
+  }
+  &.twitter {
+
+  }
+}
+
+.button-fill {
+
+}
+
+@media all and (min-width: 641px) {
+  .button {
+
+  }
+  .share-button {
+    min-width: 18em;
+    float: right;
+  }
+}
+
+
+.close-modal {
+  color: #aaa;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+  position: absolute;
+  right: 1.375rem;
+  top: 0.625rem;
+}

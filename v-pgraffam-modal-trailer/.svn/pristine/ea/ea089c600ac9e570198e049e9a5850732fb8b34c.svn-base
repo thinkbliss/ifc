@@ -1,0 +1,84 @@
+{
+    "key": "group_5548fa0c84d0a",
+    "title": "Sectioned Info Pages",
+    "fields": [
+        {
+            "key": "field_55371d3a63017",
+            "label": "Sections",
+            "name": "sections",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "Used in footer pages that have separate content sections (About Us, Contact Us)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "row",
+            "button_label": "Add Section",
+            "sub_fields": [
+                {
+                    "key": "field_55371d7063018",
+                    "label": "Section Title",
+                    "name": "section_title",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 100,
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_55371da963019",
+                    "label": "Section Content",
+                    "name": "section_content",
+                    "prefix": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 100,
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "tabs": "all"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template_sectioned_info.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1432831874
+}

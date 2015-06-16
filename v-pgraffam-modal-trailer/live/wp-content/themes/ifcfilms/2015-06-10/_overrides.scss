@@ -1,0 +1,422 @@
+// foundation overrides
+
+// global
+.row {
+  max-width: 1400px;
+}
+
+// foundation - grid
+[class*="column"] + [class*="column"]:last-child {
+  float: left;
+}
+
+// top-bar
+.top-bar {
+  position: absolute;
+  top: 0;
+  background: transparent;
+  z-index: 9;
+  width: 100%;
+  max-width: 1400px;
+  height: 4.6rem;
+
+  .title-area {
+    padding-bottom: 0.8em;
+    padding-right: 0.8em;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  body.single {
+    .top-bar {
+      //position: static;
+      //padding-right: 7em;
+    }
+  }
+}
+
+.top-bar ul {
+  margin-left: 0;
+}
+
+.top-bar .toggle-topbar a {
+  padding: 0;
+}
+.top-bar .name h1 a {
+  width: auto;
+}
+.top-bar-section {
+  display: inline-block;
+  min-height: 100vh;
+  min-width: 100vw;
+
+  ul {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .top-bar-section {
+    display: inherit;
+    min-height: inherit;
+    min-width: inherit;
+  }
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section ul li:hover:not(.has-form)>a {
+  background: transparent;
+}
+
+@media all and (max-width: 640px) {
+  .top-bar-section ul {
+    //width: 50%;
+  }
+}
+
+.top-bar-section ul li {
+  background: transparent;
+  margin: 0 1em 0 0.8em;
+}
+
+@media all and (min-width: 641px) {
+  .top-bar-section ul li {
+    margin: 0;
+    margin-top: 1em;
+  }
+}
+
+.top-bar-section ul li>a {
+  padding: 6px 0;
+  padding-left: 0.9375rem;
+}
+// end top bar
+
+
+
+// off canvas
+.left-off-canvas-menu {
+  left: 1em;
+  padding-left: 7%;
+  padding-right: 7%;
+  background: $colorBlack;
+  position: fixed;
+  width: 72%;
+}
+.move-right>.inner-wrap {
+  -webkit-transform: translate3d(80%, 0, 0);
+  -moz-transform: translate3d(80%, 0, 0);
+  -ms-transform: translate3d(80%, 0, 0);
+  -o-transform: translate3d(80%, 0, 0);
+  transform: translate3d(80%, 0, 0);
+}
+.move-right .exit-off-canvas {
+  left: 1em;
+  background: rgba(0,0,0,0.2);
+}
+
+@media all and (min-width: 641px) {
+  .left-off-canvas-menu {
+    //left: 7.1875em;
+    //left: -86%;
+    left: -24.28em;
+    padding-left: 0;
+    padding-right: 0;
+    width: 500px;
+
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+
+  .move-right>.inner-wrap {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+
+  .move-right .exit-off-canvas {
+    //left: 7.1875em;
+    left: 10vw;
+  }
+}
+// end off-canvas
+
+
+
+// flexslider overrides
+.flexslider {
+  border: 0;
+  position: relative;
+}
+.flex-control-nav {
+  bottom: 1.5em;
+  z-index: 3;
+}
+.flex-control-paging li a {
+  background: $rgbaWhite5;
+
+  &.flex-active {
+    background: $rgbaWhite9;
+  }
+
+  &:hover {
+    background: $rgbaWhite9;
+  }
+}
+.flexslider .slides>li {
+  -webkit-backface-visibility: inherit;
+}
+// end flexslider
+
+
+// nprogress
+@for $i from 1 through length($colors) {
+  .trailer#{$i} {
+    > #nprogress .bar {
+      background: nth($colors, $i);
+    }
+  }
+}
+.midnight {
+  #nprogress .bar {
+    background: $colorMidnight;
+  }
+}
+#nprogress .peg {
+  display: none;
+}
+// end nprogress
+
+
+// GWI widget
+.gwi-widget {
+  .btn-gwi.btn-gwi-block {
+    background: none;
+    border: none;
+    padding: inherit;
+    font-family: HelveticaNeueLTStd-Bd, "Helvetic Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    display: block;
+    text-align: center;
+
+    &:hover, &:focus {
+      background: none;
+      border: none;
+    }
+  }
+
+  .btn-icon {
+    top: 0.025em !important;
+    width: 1.3em !important;
+    height: 1.3em !important;
+    background-size: 1.3em !important;
+  }
+
+  &.trailer-color.button {
+    path {
+      fill: $colorWhite;
+    }
+  }
+}
+//end GWI
+
+
+// Video JS //
+@media all and (min-width: 641px) {
+  .video-js {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+// foundation -reveal
+.reveal-modal {
+  background-color: $colorBlack;
+  position: fixed;
+
+  >:first-child {
+    color: $colorWhite;
+    margin-top: 0.6em;
+  }
+
+  .flex-video {
+
+  }
+
+  .video-js {
+    width: 86vw !important;
+    //height: 160px !important;
+  }
+}
+@media all and (max-width: 641px) {
+  .reveal-modal {
+    top: 0;
+
+    .flex-video {
+      top: 12%;
+    }
+  }
+}
+@media all and (min-width: 641px) {
+  .reveal-modal {
+    .video-js {
+      width: 100% !important;
+      //height: 160px !important;
+    }
+  }
+}
+
+.vjs-social-overlay {
+  margin-top: 10%;
+  z-index: 10000;
+
+  > form {
+    margin-top: 20vh;
+  }
+}
+
+
+
+// foundation - progress
+.progress {
+  height: 8px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  background-image: url('./../images/icons/scrubber.png');
+  background-repeat: repeat-x;
+  background-position: 0 3px;
+  position: relative;
+  width: 100%;
+
+  .meter {
+    width: 0%;
+    height: 3px;
+    margin-top: 3px;
+    background: $colorWhite;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+
+
+// rangeslider
+.rangeslider {
+  width: 100%;
+  height: 7px;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  z-index: 2;
+
+  .rangeslider__fill, .rangeslider__handle {
+    display: none;
+  }
+}
+.homepage {
+  .rangeslider {
+    width: 450px;
+  }
+}
+
+
+// foundation divider
+.top-bar-section .divider {
+  border-color: rgba(255,255,255,0.6);
+  margin: 8px 0;
+}
+
+
+// foundation accordion
+.accordion .accordion-navigation {
+  > a,
+  > a:hover,
+  &.active > a,
+  > .content.active,
+  > .content {
+    background: transparent;
+    padding: 0;
+  }
+  > .content {
+    overflow: hidden;
+  }
+}
+
+
+// clearing photo gallery lightbox
+.clearing-blackout {
+  z-index: 1006;
+}
+
+
+// tooltip
+
+.tooltip > .nub {
+  display: block;
+  left: 40%;
+  }
+
+.tooltip {
+  background: #fff;
+  box-shadow: 0px 0px 9px rgba(0,0,0,0.4);
+  color: inherit;
+  margin-top: -2rem;
+  min-width: 21.4em; // change if theres a stacked button style
+
+  &:hover {
+    display: block !important;
+    opacity: 1 !important;
+  }
+  h5 {
+    margin-bottom: 0.1em;
+  }
+  p {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .nub {
+    border-width: 21px;
+    border-color: transparent transparent #fff transparent;
+
+    @media only screen and (min-width: 40.063em) {
+      top: -38px;
+    }
+  }
+  .button {
+    margin-bottom: 0;
+
+    &:first-of-type {
+      margin-right: 1em;
+    }
+
+    &.watch .btn-gwi {
+      padding-bottom: 0.4625rem;
+    }
+  }
+}
+.has-tip {
+  border-bottom: inherit;
+  cursor: inherit;
+  font-weight: inherit;
+  color: inherit;
+  &:hover, &:focus {
+    border-bottom: inherit;
+    color: inherit;
+  }
+}

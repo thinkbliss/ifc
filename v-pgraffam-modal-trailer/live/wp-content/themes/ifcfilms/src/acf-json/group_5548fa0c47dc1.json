@@ -1,0 +1,1263 @@
+{
+    "key": "group_5548fa0c47dc1",
+    "title": "Film Pages",
+    "fields": [
+        {
+            "key": "field_553564f2fa4d7",
+            "label": "Excerpt",
+            "name": "excerpt",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "Used in hover tooltip throughout site.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "br",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5553d57b7d38b",
+            "label": "Color",
+            "name": "color",
+            "prefix": "",
+            "type": "select",
+            "instructions": "Choose a primary color for this film (unless midnight film in which case it defaults to that category's red color)",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "Orange",
+                "2": "Blue",
+                "3": "Green"
+            },
+            "default_value": {
+                "1: Yellow": "1: Yellow"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_556f2aad5f693",
+            "label": "Presented By Label",
+            "name": "presented_by_label",
+            "prefix": "",
+            "type": "select",
+            "instructions": "Choose the main film presented by label ",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "ifc": "IFC FIlms",
+                "sundance": "Sundance Selects",
+                "midnight": "IFC Midnight"
+            },
+            "default_value": {
+                "ifc: IFC Films": "ifc: IFC Films"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_553ebaac8e804",
+            "label": "Film Poster",
+            "name": "film_poster",
+            "prefix": "",
+            "type": "image",
+            "instructions": "Poster Image used in all films and discover pages. 254px x 377px",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "uploadedTo",
+            "min_width": 254,
+            "min_height": 377,
+            "min_size": "",
+            "max_width": 254,
+            "max_height": 377,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_555393d39da5e",
+            "label": "Film Thumb",
+            "name": "film_thumb",
+            "prefix": "",
+            "type": "image",
+            "instructions": "Film thumbnail used in coming soon page and related section. 254px x 142px",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "uploadedTo",
+            "min_width": 254,
+            "min_height": 142,
+            "min_size": "",
+            "max_width": 254,
+            "max_height": 142,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5553a8ea9da5f",
+            "label": "Trailer Drawer Image",
+            "name": "trailer_drawer_image",
+            "prefix": "",
+            "type": "image",
+            "instructions": "Large sized image for side trailer drawer. 1920px x 1080px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "uploadedTo",
+            "min_width": 1920,
+            "min_height": 1080,
+            "min_size": "",
+            "max_width": 1920,
+            "max_height": 1080,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5553a90e9da60",
+            "label": "Film Header",
+            "name": "film_header",
+            "prefix": "",
+            "type": "image",
+            "instructions": "Used in single page top header. 1560px x 650px",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "uploadedTo",
+            "min_width": 1560,
+            "min_height": 650,
+            "min_size": "",
+            "max_width": 1560,
+            "max_height": 650,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5553a92c9da61",
+            "label": "Film Header Mobile",
+            "name": "film_header_mobile",
+            "prefix": "",
+            "type": "image",
+            "instructions": "Used in single page top header - mobile version. 640px x 445px",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "uploadedTo",
+            "min_width": 640,
+            "min_height": 445,
+            "min_size": "",
+            "max_width": 640,
+            "max_height": 445,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_55564a2a9a290",
+            "label": "Home Film Mobile",
+            "name": "home_film_mobile",
+            "prefix": "",
+            "type": "image",
+            "instructions": "Image used in homepage mobile slider. 640px x 1138px ",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "uploadedTo",
+            "min_width": 640,
+            "min_height": 1138,
+            "min_size": "",
+            "max_width": 640,
+            "max_height": 1138,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_553eb2b17a785",
+            "label": "Photo Gallery",
+            "name": "photo_gallery",
+            "prefix": "",
+            "type": "gallery",
+            "instructions": "Single page photo gallery section. ",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "preview_size": "thumbnail",
+            "library": "uploadedTo",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_55522441a418f",
+            "label": "Video Gallery",
+            "name": "video_gallery",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "List Brightcove IDs for other videos to be displayed in video gallery section of single page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Video",
+            "sub_fields": [
+                {
+                    "key": "field_55522475a4190",
+                    "label": "Video ID",
+                    "name": "video_id",
+                    "prefix": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Add Brightcove ID",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_555e59bcdcaf8",
+            "label": "Recent Acquisition",
+            "name": "recent_acquisition",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "Determines whether this shows up in the recent acquisitions filter of coming soon page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_55366fecd2f42",
+            "label": "Film Details",
+            "name": "",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_553674d761fc8",
+            "label": "Rating",
+            "name": "rating",
+            "prefix": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "G": "G",
+                "PG": "PG",
+                "PG13": "PG-13",
+                "R": "R",
+                "NR": "NR",
+                "UR": "UR"
+            },
+            "default_value": {
+                "PG13": "PG13"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_5535647f91779",
+            "label": "Release Start Date",
+            "name": "release_start_date",
+            "prefix": "",
+            "type": "date_picker",
+            "instructions": "Used in info section and also to determine coming soon list",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "m\/d\/Y",
+            "return_format": "Ymd",
+            "first_day": 1
+        },
+        {
+            "key": "field_555bc8feef44f",
+            "label": "Release Text Info",
+            "name": "release_text_info",
+            "prefix": "",
+            "type": "text",
+            "instructions": "Text used for coming soon films (Eg. In theaters and VOD February 27). Make sure date is in sync with Release Start Date",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5535654147878",
+            "label": "Feature Length",
+            "name": "feature_length",
+            "prefix": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_553809e1b73f7",
+            "label": "Media IDs",
+            "name": "",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_55380a30adf58",
+            "label": "BC Trailer ID",
+            "name": "bc_trailer_id",
+            "prefix": "",
+            "type": "text",
+            "instructions": "Main trailer Brightcove ID used in trailer drawer and homepage as well as play trailer modal.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_553809fcb73f8",
+            "label": "GoWatchIt ID",
+            "name": "gowatchit_id",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55366fc6d2f41",
+            "label": "Personnel",
+            "name": "",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_553561558dc3b",
+            "label": "Starring",
+            "name": "starring",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "table",
+            "button_label": "Add Actor\/Actress",
+            "min": 0,
+            "max": 0,
+            "sub_fields": [
+                {
+                    "key": "field_553562ae8dc3c",
+                    "label": "Name",
+                    "name": "name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_5535632bdc673",
+            "label": "Directors",
+            "name": "directors",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "table",
+            "button_label": "Add Director",
+            "min": 0,
+            "max": 0,
+            "sub_fields": [
+                {
+                    "key": "field_5535632bdc674",
+                    "label": "Name",
+                    "name": "name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_553563443821b",
+            "label": "Producers",
+            "name": "producers",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "table",
+            "button_label": "Add Producer",
+            "min": 0,
+            "max": 0,
+            "sub_fields": [
+                {
+                    "key": "field_553563443821c",
+                    "label": "Name",
+                    "name": "name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_553563d3c382b",
+            "label": "Executive Producers",
+            "name": "executive_producers",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Exectuive Producer",
+            "sub_fields": [
+                {
+                    "key": "field_553563d3c382c",
+                    "label": "Name",
+                    "name": "name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_553563f5c382d",
+            "label": "Writers",
+            "name": "writers",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Writer",
+            "sub_fields": [
+                {
+                    "key": "field_553563f5c382e",
+                    "label": "Name",
+                    "name": "name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_55357cea168f5",
+            "label": "Official Links",
+            "name": "",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_55357d0b168f6",
+            "label": "Official Site",
+            "name": "official_site",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "http:\/\/www.example.com",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55357d45168f7",
+            "label": "Facebook Page",
+            "name": "facebook_page",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "film_page",
+            "prepend": "https:\/\/www.facebook.com\/",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55357d69168f8",
+            "label": "Twitter Page",
+            "name": "twitter_page",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "film_page",
+            "prepend": "https:\/\/www.twitter.com\/",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_553801eabd29b",
+            "label": "Twitter Hashtag",
+            "name": "twitter_hashtag",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "film_page",
+            "prepend": "#",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55381f1666556",
+            "label": "Quotes",
+            "name": "",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_55381f3866557",
+            "label": "Quotes",
+            "name": "quotes",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "Multiple quotes will be set up in rotation.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "row",
+            "button_label": "Add Row",
+            "sub_fields": [
+                {
+                    "key": "field_55381f4e6655d",
+                    "label": "Content",
+                    "name": "content",
+                    "prefix": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": "wpautop",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_55381f736655e",
+                    "label": "Author",
+                    "name": "author",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_55381f826655f",
+                    "label": "Publication \/ Site",
+                    "name": "publication_site",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_55381f9866560",
+                    "label": "Link",
+                    "name": "link",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "e.g. http:\/\/www.example.com\/article",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_5538021c44513",
+            "label": "Awards",
+            "name": "",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_553802b244514",
+            "label": "Traditional Awards",
+            "name": "traditional_awards",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "Adds laurels automatically",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "row",
+            "button_label": "Add Row",
+            "sub_fields": [
+                {
+                    "key": "field_553802e644515",
+                    "label": "Award Name",
+                    "name": "award_name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "e.g. 2015 Academy Awards",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_553803c4b5639",
+                    "label": "Nominated",
+                    "name": "nominated",
+                    "prefix": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "row_min": "",
+                    "row_limit": "",
+                    "layout": "row",
+                    "button_label": "Add Row",
+                    "min": 0,
+                    "max": 0,
+                    "sub_fields": [
+                        {
+                            "key": "field_553803c4b563a",
+                            "label": "Category",
+                            "name": "category",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "e.g. Best Picture",
+                            "prepend": "",
+                            "append": "",
+                            "formatting": "none",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        }
+                    ]
+                },
+                {
+                    "key": "field_553802fd44516",
+                    "label": "Won",
+                    "name": "won",
+                    "prefix": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "row_min": "",
+                    "row_limit": "",
+                    "layout": "row",
+                    "button_label": "Add Row",
+                    "min": 0,
+                    "max": 0,
+                    "sub_fields": [
+                        {
+                            "key": "field_5538031944517",
+                            "label": "Category",
+                            "name": "category",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "e.g. Best Picture",
+                            "prepend": "",
+                            "append": "",
+                            "formatting": "none",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_5538076e7c828",
+            "label": "Festival Awards",
+            "name": "festival_awards",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "row",
+            "button_label": "Add Row",
+            "min": 0,
+            "max": 0,
+            "sub_fields": [
+                {
+                    "key": "field_553807ba7c82e",
+                    "label": "Festival Name",
+                    "name": "festival_name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_5538076e7c829",
+                    "label": "Award Name",
+                    "name": "award_name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_55366fa4d2f40",
+            "label": "Related",
+            "name": "",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_5535788223f9b",
+            "label": "Films Like This",
+            "name": "films_like_this",
+            "prefix": "",
+            "type": "relationship",
+            "instructions": "Related films section. Choose max of 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "film"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": 3,
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "film"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments",
+        "format",
+        "tags",
+        "send-trackbacks"
+    ],
+    "modified": 1433371480
+}
